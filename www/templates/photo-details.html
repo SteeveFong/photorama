@@ -1,0 +1,28 @@
+<ion-view view-title="Home">
+  <ion-nav-title>{{photo.title}}</ion-nav-title>
+  <ion-nav-buttons side="right">
+    <button class="button" ng-click="favorite()">
+      <span class="ion-heart"></span>
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <div class="list card" style="margin-bottom: 100px">
+      <div class="item item-avatar">
+        <img ng-src="{{photo.url_m}}">
+        <h2>{{photo.ownername}}</h2>
+        <p>{{photo.datetaken}}</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" ng-src="{{photo.url_m}}">
+        <p>
+          {{photo.description._content}}
+        </p>
+        <p>
+          <a href="#" class="subdued">{{photo.views}} vues</a>
+        </p>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

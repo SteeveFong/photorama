@@ -1,0 +1,12 @@
+.photo-collection {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.photo-collection img {
+  position: absolute;
+  left: -10px; /* Change this */
+  top: -10px;  /* Change this */
+  cursor: hand;
+}

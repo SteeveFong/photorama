@@ -1,0 +1,14 @@
+<ion-view view-title="Photos">
+  <ion-content>
+  <span class="photo-collection"
+        collection-repeat="photo in photos"
+        item-height="imageSize"
+        item-width="imageSize">
+  <a ui-sref="app.tabs.photos-detail({id: photo.id})">
+    <img ng-src="{{photo.url_m}}"
+         width="{{photo.width_m}}"
+         height="{{photo.height_m}}">
+  </a>
+  </span>
+  </ion-content>
+</ion-view>
